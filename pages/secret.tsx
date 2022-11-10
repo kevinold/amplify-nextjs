@@ -1,5 +1,4 @@
 import { withAuthenticator } from '@aws-amplify/ui-react';
-import { time } from 'console';
 
 export function getServerSideProps() {
     return {
@@ -9,7 +8,7 @@ export function getServerSideProps() {
     };
   }
 
-function Secret({ user: any, time: any}) {
+function Secret({ user, time}) {
   return (
     <div style={{"padding": 50}}>
       <h3>
